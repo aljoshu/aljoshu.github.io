@@ -1,7 +1,70 @@
 <!DOCTYPE html>
 <html>
+
+<head>
+  <title>Home</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/tabs.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="js/gallery.js"></script>
+  <script src="js/tabs.js"></script>
+</head>
+
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+<div class="jumbotron text-center">
+  <h1>Testing Bootstrap</h1>
+  <p>Resize this responsive page to see the effect!</p>
+</div>
+<h2 class="jumbotron text-center">My Skin Gallery</h2>
+
+<!--
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen">London</button>
+  <button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
+  <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
+</div>
+
+<div id="London" class="tabcontent">
+  <h3>Varvalian</h3>
+  <p>An edited version of Varvalian's NM skin.</p>
+  <img class="imgGallery1" src="images/vv1.jpg" style="width:50%">
+  <img class="imgGallery1" src="images/vv2.jpg" style="width:50%">
+</div>
+
+<div id="Paris" class="tabcontent">
+  <h3>天空の ROSE - Hoshimachi Suisei </h3>
+  <p>An edited version of Haruka's Suisei skin.</p> 
+  <img class="imgGallery2" src="images/rose1.jpg" style="width:50%">
+  <img class="imgGallery2" src="images/rose2.jpg" style="width:50%">
+</div>
+
+<div id="Tokyo" class="tabcontent">
+  <h3>Placeholder</h3>
+  <p>This is empty for now.</p>
+</div>
+-->
+<ul class="nav nav-pills nav-justified">
+  <li class="nav-item">
+    <a class="nav-link active" aria-current="page" href="#">Home</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Varvalian</a>
+    <h3>Varvalian/ Aristia</h3>
+    <p>An edited version of Varvalian's NM skin.</p>
+    <img class="imgGallery1" src="images/vv1.jpg" style="width:50%">
+    <img class="imgGallery1" src="images/vv2.jpg" style="width:50%">
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Rose</a>
+    <h3>天空の ROSE - Hoshimachi Suisei </h3>
+    <p>An edited version of Haruka's Suisei skin.</p> 
+    <img class="imgGallery2" src="images/rose1.jpg" style="width:50%">
+    <img class="imgGallery2" src="images/rose2.jpg" style="width:50%">
+  </li>
+</ul>
 </body>
+
 </html>
