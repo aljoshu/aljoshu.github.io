@@ -8,10 +8,19 @@
   --my-blue: #C9EBF2;
   --dark-pink: #FF6B81;
   --darker-pink: #FF4F63;
+  --main-gray: #EDEDED;
+  --main-red: #FF6B6B;
+  --main-white: #FFFFFF;
+  --light-blue: #3498db;
+  --darker-blue: #2980b9;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background-color: #EDEDED;
+  background-color: var(--main-gray);
   font-family: 'Poppins', 'Quicksand', sans-serif;
 }
 
@@ -162,10 +171,91 @@ body {
   height: auto;
   min-height: 100vh;
   padding: 60px 20px;
+  text-align: center; /* Center the content */
 }
 
 #contact h2 {
   margin-bottom: 20px;
+}
+
+/* Additional styles for the contact section */
+.contact-section {
+  text-align: center;
+  padding: 80px 20px;
+  background: var(--main-gray);
+}
+
+.contact-section-header > h2 {
+  font-size: 6rem;
+}
+
+.contact-section-header > p {
+  font-style: italic;
+}
+
+.contact-links {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  flex-wrap: wrap;
+  margin-top: 4rem;
+}
+
+.contact-details,
+.copy-email-btn,
+.phone-btn {
+  font-size: 2.4rem;
+  text-shadow: 2px 2px 1px #1f1f1f;
+  transition: transform 0.3s ease-out;
+  margin: 10px;
+  padding: 20px;
+  border-radius: 2px;
+  color: var(--main-white);
+  text-decoration: none;
+}
+
+.contact-details:hover,
+.copy-email-btn:hover,
+.phone-btn:hover {
+  transform: translateY(8px);
+  background: var(--main-red);
+}
+
+.copy-email-btn,
+.phone-btn {
+  padding: 20px;
+  border-radius: 2px;
+  color: var(--main-white);
+  text-decoration: none;
+  background-color: var(--light-blue); /* Light blue */
+}
+
+.copy-email-btn:hover,
+.phone-btn:hover {
+  background: var(--darker-blue); /* Darker blue on hover */
+}
+
+.email-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.copy-message {
+  color: #2ecc71; /* Green color */
+  display: none;
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.copy-message {
+  color: #2ecc71; /* Green color */
+  display: none;
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 1.2em;
 }
 
 /* Media Query for Responsive Web */

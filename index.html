@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Portfolio</title>
     <link rel="stylesheet" href="css/styles.css" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700|Poppins:wght@300;400;500;600;700&display=swap">
+    <script src="https://kit.fontawesome.com/98cb628307.js" crossorigin="anonymous"></script>
+    <script src="js/functions.js"></script>
   </head>
   <body>
     <!-- navbar -->
@@ -87,9 +88,35 @@
     </div>
 
     <!-- Contact/ Socials -->
-    <div id="contact">
-      <h2>Contact</h2>
-      <a id="profile-link" href="https://github.com/aljoshu" target="_blank">GitHub</a>
+    <div id="contact" class="contact-section">
+      <div class="contact-section-header">
+        <h2>Contact</h2>
+        <p>Feel free to get in touch with me.</p>
+      </div>
+      <div class="contact-links">
+        <!-- LinkedIn -->
+        <a href="https://www.linkedin.com/in/alvin-joshua-ab75b5202/" target="_blank" class="btn contact-details">
+          <i class="fab fa-linkedin"></i> LinkedIn
+        </a>
+
+        <!-- GitHub -->
+        <a id="profile-link" href="https://github.com/aljoshu" target="_blank" class="btn contact-details">
+          <i class="fab fa-github"></i> GitHub
+        </a>
+
+        <!-- Email with copyText function -->
+        <button class="btn contact-details copy-email-btn" onclick="copyText()">
+          <i class="far fa-envelope"></i> Email <i class="far fa-save"></i>
+        </button>
+
+        <!-- Phone -->
+        <button class="btn contact-details phone-btn" onclick="copyPhoneNumber()">
+          <i class="fas fa-mobile-alt"></i> Phone Number <i class="far fa-save"></i>
+        </button>
+      </div>
+
+      <!-- Copy message outside contact-links -->
+      <div class="copy-message" id="copyMessage"></div>
     </div>
 
   </body>
