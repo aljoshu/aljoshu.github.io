@@ -81,10 +81,69 @@
 
     <!-- Skills -->
     <div id="skills">
-      <h2 id="skills1">Proficient Skills</h2>
-      
-      <h2 id="skills2">Currently Learning</h2>
-      
+      <div class="skill-category">
+        <h2 id="skills1">Proficient Skills</h2>
+        <div class="skill-list">
+          <div class="skill">
+            <img src="https://img.icons8.com/color/48/000000/html-5.png" alt="HTML Icon" />
+            <span class="skill-text">HTML</span>
+          </div>
+          <div class="skill">
+            <img src="https://img.icons8.com/color/48/000000/css3.png" alt="CSS Icon" />
+            <span class="skill-text">CSS</span>
+          </div>
+          <div class="skill">
+            <img src="https://img.icons8.com/color/48/000000/javascript.png" alt="JavaScript Icon" />
+            <span class="skill-text">JavaScript</span>
+          </div>
+          <div class="skill">
+            <i class="fab fa-php"></i>
+            <span class="skill-text">PHP</span>
+          </div>
+          <div class="skill">
+            <i class="fas fa-database"></i>
+            <span class="skill-text">SQL</span>
+          </div>
+          <div class="skill">
+            <i class="fab fa-java"></i>
+            <span class="skill-text">Java</span>
+          </div>
+          <div class="skill">
+            <i class="fab fa-python"></i>
+            <span class="skill-text">Python</span>
+          </div>
+          <div class="skill">
+            <i class="fas fa-c"></i>
+            <span class="skill-text">C/C++</span>
+          </div>
+          <div class="skill">
+            <i class="fab fa-github-square"></i>
+            <span class="skill-text">GitHub/ GitHub Desktop</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="skill-category">
+        <h2 id="skills2">Currently Learning</h2>
+        <div class="skill-list">
+          <div class="skill">
+            <i class="fab fa-react"></i>
+            <span class="skill-text">React</span>
+          </div>
+          <div class="skill">
+            <i class="fas fa-code"></i>
+            <span class="skill-text">Next.js</span>
+          </div>
+          <div class="skill">
+            <i class="fab fa-bootstrap"></i>
+            <span class="skill-text">Bootstrap</span>
+          </div>
+          <div class="skill">
+            <img src="https://img.icons8.com/color/48/000000/css3.png" alt="CSS Icon" />
+            <span class="skill-text">Tailwind CSS</span>
+          </div>
+        </div>
+      </div>
     </div>
 
     <!-- Contact/ Socials -->
@@ -95,7 +154,7 @@
       </div>
       <div class="contact-links">
         <!-- LinkedIn -->
-        <a href="https://www.linkedin.com/in/alvin-joshua-ab75b5202/" target="_blank" class="btn contact-details">
+        <a id="button-linkedin" href="https://www.linkedin.com/in/alvin-joshua-ab75b5202/" target="_blank" class="btn contact-details">
           <i class="fab fa-linkedin"></i> LinkedIn
         </a>
 
@@ -105,12 +164,12 @@
         </a>
 
         <!-- Email with copyText function -->
-        <button class="btn contact-details copy-email-btn" onclick="copyText()">
+        <button id="button-email" class="btn contact-details copy-email-btn" onclick="copyText()">
           <i class="far fa-envelope"></i> Email <i class="far fa-save"></i>
         </button>
 
         <!-- Phone -->
-        <button class="btn contact-details phone-btn" onclick="copyPhoneNumber()">
+        <button id="button-phone" class="btn contact-details phone-btn" onclick="copyPhoneNumber()">
           <i class="fas fa-mobile-alt"></i> Phone Number <i class="far fa-save"></i>
         </button>
       </div>

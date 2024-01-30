@@ -156,13 +156,59 @@ body {
 /* Skills */
 #skills {
   background-color: #B0E57C;
-  height: auto;
-  min-height: 100vh;
   padding: 60px 20px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.skill-category {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.skill-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.skill {
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+  margin-bottom: 10px;
+  text-align: center;
+  color: #3498db;
+}
+
+.skill-text {
+  font-size: 1.5rem;
+  color: #1f1f1f;
+}
+
+.skill i {
+  margin-right: 10px;
+}
+
+#skills1,
+#skills2 {
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+  margin: 0;
+  text-align: center;
+  color: var(--dark-pink);
 }
 
 #skills1 {
-  margin-bottom: 20px;
+  margin-bottom: 25px;
+}
+
+#skills2 {
+  margin-bottom: 30px;
 }
 
 /* Contact */
@@ -176,6 +222,7 @@ body {
 
 #contact h2 {
   margin-bottom: 20px;
+  color: #6b5b95;
 }
 
 /* Additional styles for the contact section */
@@ -191,6 +238,7 @@ body {
 
 .contact-section-header > p {
   font-style: italic;
+  color: #34495E;
 }
 
 .contact-links {
@@ -256,6 +304,22 @@ body {
   margin-top: 10px;
   font-weight: bold;
   font-size: 1.2em;
+}
+
+#button-linkedin {
+  color: #0077B5;
+}
+
+#profile-link {
+  color: #4078C0;
+}
+
+#button-email {
+  color: #cccccc;
+}
+
+#button-phone {
+  color: #82c99d;
 }
 
 /* Media Query for Responsive Web */

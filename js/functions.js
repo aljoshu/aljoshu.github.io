@@ -3,6 +3,8 @@ function copyText() {
     .then(() => {
       // Show the custom message
       const copyMessage = document.getElementById("copyMessage");
+      copyMessage.textContent = "Email copied!";
+      copyMessage.style.color = "#2ecc71"; // Green color
       copyMessage.style.display = "block";
 
       // Hide the message after a delay
@@ -14,6 +16,7 @@ function copyText() {
       console.error('Unable to copy text: ', err);
     });
 }
+
 
 function copyPhoneNumber() {
   navigator.clipboard.writeText("123456789")
