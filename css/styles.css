@@ -75,10 +75,8 @@ body {
 /* Projects */
 #projects {
   background-color: #F7D8A6;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 20px;
-  justify-content: center;
+  display: flex;
+  flex-direction: column;
   align-items: center;
   padding: 60px 20px;
   min-height: 100vh;
@@ -86,13 +84,20 @@ body {
 
 #projects .title-container {
   width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
 }
 
 #projects h2 {
-  margin-bottom: 0;
+  margin-bottom: 40px;
+}
+
+.project-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  width: calc(100% - 40px);
+  max-width: 1300px;
 }
 
 @keyframes changeColor {
@@ -122,35 +127,47 @@ body {
   flex-direction: column;
   align-items: center;
   margin-bottom: 20px;
-  height: 300px;
-  width: 300px;
+  height: 400px;
+  width: 100%;
+  background-color: var(--main-white);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  max-width: 400px;
 }
 
 .card a {
   display: flex;
+  width: 100%;
+  width: 100%;
 }
 
 .card img {
   width: 100%;
-  height: auto;
+  height: 100%;
   object-fit: cover;
+  border-bottom: 2px solid #ddd;
 }
 
 .card-content {
-  background-color: gray;
+  padding: 20px;
+  flex-grow: 1;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  width: 100%;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  align-items: center;
+  text-align: center;
 }
 
 .card-content h3,
 .card-content p {
   margin: 0;
   padding: 0;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  transition: transform 0.3s ease-out;
 }
 
 /* Skills */
