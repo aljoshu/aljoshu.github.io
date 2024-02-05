@@ -4,6 +4,7 @@
   box-sizing: border-box;
 }
 
+/* Define color variables */
 :root {
   --my-blue: #C9EBF2;
   --dark-pink: #FF6B81;
@@ -15,10 +16,12 @@
   --darker-blue: #2980b9;
 }
 
+/* Smooth scrolling behavior */
 html {
   scroll-behavior: smooth;
 }
 
+/* Body styles */
 body {
   background-color: var(--main-gray);
   font-family: 'Poppins', 'Quicksand', sans-serif;
@@ -45,8 +48,9 @@ body {
 }
 
 .nav-link:hover {
-  color: var(--darker-pink);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   background-color: #F0F0F0;
+  padding: 18px;
 }
 
 /* Welcome Section */
@@ -61,10 +65,28 @@ body {
   color: var(--dark-pink);
 }
 
+@keyframes waveColor {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 100% 0%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+
 #intro {
   margin: 0;
   margin-bottom: 5px;
   font-size: 4em;
+  background: linear-gradient(to right, #FFD700, #FF6347, #8A2BE2, #32CD32, #FF4500);
+  background-size: 200% 100%;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  animation: waveColor 5s infinite;
 }
 
 #intro-sub {
@@ -199,7 +221,7 @@ body {
   font-size: 2rem;
   margin-bottom: 10px;
   text-align: center;
-  color: #3498db;
+  color: var(--dark-pink);
 }
 
 .skill-text {
@@ -209,23 +231,17 @@ body {
 
 .skill i {
   margin-right: 10px;
+  color: #3498db;
 }
 
 #skills1,
-#skills2 {
-  margin-bottom: 20px;
+#skills2,
+#skills3 {
+  margin-bottom: 30px;
   font-size: 2.5rem;
   margin: 0;
   text-align: center;
   color: var(--dark-pink);
-}
-
-#skills1 {
-  margin-bottom: 25px;
-}
-
-#skills2 {
-  margin-bottom: 30px;
 }
 
 /* Contact */
